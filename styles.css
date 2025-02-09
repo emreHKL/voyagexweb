@@ -1,0 +1,121 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(100deg, #ffde59 50%, #067841 50%);
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+    background-color: #004aad;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 20px;
+}
+
+main {
+    flex: 1; /* Pushes the footer down */
+    padding: 70px;
+    font-size: 24px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    color: white;
+    width:80%;
+    max-width:300px;
+    background-color: #28a745;
+    border: none;
+    cursor: pointer;
+    margin: 10px auto;
+    font-weight: 900;
+    
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.qr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    position: relative;  /* Keep it in flow */
+    top: 10px; /* Move QR codes higher */
+}
+
+.qr-code {
+    text-align: center;
+    font-weight: 800;
+}
+
+.qr-code img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    background: white;
+}
+
+.download-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Adjust the space between button and QR codes */
+    margin-top: -50px; /* Ensure proper placement */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .download-section {
+        gap: 15px; /* Reduce space between button and QR codes even more */
+        margin-top: -5px; /* Adjust positioning */
+    }
+    
+    .qr-container {
+        flex-direction: column; /* Stack QR codes vertically */
+        gap: 15px;
+    }
+    
+    main {
+        font-size: 20px;
+        padding: 5px; /* Less padding on mobile */
+    }
+
+    .qr-container {
+        flex-direction: column; /* Stack QR codes vertically */
+        gap: 20px;
+    }
+
+    .qr-code img {
+        width: 100px;
+        height: 100px;
+    }
+
+    button {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+    
+}
