@@ -82,6 +82,11 @@ footer {
     margin-top: -50px; /* Ensure proper placement */
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
     .download-section {
