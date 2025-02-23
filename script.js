@@ -6,7 +6,7 @@ document.getElementById("downloadBtn").addEventListener("click", function() {
         window.location.href = "https://play.google.com/store/apps/details?id=com.yourappname";
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         // Redirect iOS users to Apple App Store
-        window.location.href = "https://apps.apple.com/app/idyourappid";
+        window.location.href = "https://apps.apple.com/pl/app/voyagex/id6739811661";
     } else {
         alert("Download the app on mobile.");
     }
